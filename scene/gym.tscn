@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://jiov4om61sxm"]
+
+[ext_resource type="PackedScene" uid="uid://b5346nq1mxkqa" path="res://scene/player.tscn" id="1_bx025"]
+[ext_resource type="PackedScene" uid="uid://bk3fpcbmlbxmg" path="res://scene/dummy.tscn" id="2_ewo1x"]
+
+[node name="Gym" type="Node2D" unique_id=53859874]
+
+[node name="Player" parent="." unique_id=1801066593 instance=ExtResource("1_bx025")]
+position = Vector2(63, 357)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1542270846]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1536561106]
+polygon = PackedVector2Array(3, 176, 158, 176, 247, 105, 379, 106, 446, 185, 640, 186, 639, -1, 0, 1)
+
+[node name="Dummy" parent="StaticBody2D" unique_id=1713223911 instance=ExtResource("2_ewo1x")]
+position = Vector2(434, 331)
+
+[node name="Dummy2" parent="StaticBody2D" unique_id=39584419 instance=ExtResource("2_ewo1x")]
+position = Vector2(374, 331)
+
+[node name="Dummy3" parent="StaticBody2D" unique_id=1621081741 instance=ExtResource("2_ewo1x")]
+position = Vector2(481, 332)
+
+[node name="Dummy4" parent="StaticBody2D" unique_id=1080023957 instance=ExtResource("2_ewo1x")]
+position = Vector2(523, 331)
+
+[node name="Dummy5" parent="StaticBody2D" unique_id=351487352 instance=ExtResource("2_ewo1x")]
+position = Vector2(576, 332)
